@@ -6,29 +6,33 @@ const bikes = [
   {
     nome: 'Bianchi',
     peso: '8',
-  }
+  },
   {
     nome: 'Sempion',
     peso: '10',
-  }
+  },
   {
     nome: 'Ravasi',
     peso: '9',
-  }
+  },
 ];
 
-bikes.forEach( (element) => {
-  return {
-    ...element,
-    position: ,
-  }
-}));
+// variabile in cui troverò l'oggetto della bici più leggera
+ let lightBike = 
+ // cerco l'oggetto con la proprietà 'peso' minore
+ bikes.forEach( (element) => {
 
-bikes.forEach( (element) => {
- if (min <= index && max >= index ) {
-   newArray.push(element);
- }
-})
+
+
+
+ });
+
+ // Stampo a schermo utilizzando Handlebars
+ //HANDLEBARS
+ const source = $('#template').html();
+ const template = Handlebars.compile(source);
+ let html = template(lightBike);
+ $('.container').append(html);
 
 
 /* JSnack 2
@@ -63,47 +67,47 @@ Creiamo un array di oggetti (scelti da voi)
 Creiamo una copia da questo array di partenza e aggiungiamo ai singoli elementi una nuova proprietà position che contiene una lettera casuale.
 Non dobbiamo modificare l'array iniziale. */
 
-const teams = [
-  {
-    name: 'Ferrari',
-    color: 'Red',
-  },
-  {
-    name: 'Mercedes',
-    color: 'Black',
-  },
-  {
-    name: 'Mclaren',
-    color: 'Orange',
-  }
-];
-
-const copy = [...teams].map( (element => {
-
-  // const copyEl = {
-  //   ...element,
-  //   position.generaPosizione(),
-  // }
-  //
-  // return copyEl
-
-  return {
-    ...element,
-    position: generaPosizione(),
-  }
-}));
-
-console.log(copy);
-
-
-function generaPosizione() {
-  var letters = 'ABCDEFGHIJKLMNOPQRSTUWXYZ';
-
-  var letter = letters[randomNumber(0, letters.length - 1)];
-
-  return letter;
-}
-
-function randomNumber(min, max) {
-  return Math.floor( Math.random() * (max - min + 1)) + min;
-}
+// const teams = [
+//   {
+//     name: 'Ferrari',
+//     color: 'Red',
+//   },
+//   {
+//     name: 'Mercedes',
+//     color: 'Black',
+//   },
+//   {
+//     name: 'Mclaren',
+//     color: 'Orange',
+//   }
+// ];
+//
+// const copy = [...teams].map( (element => {
+//
+//   // const copyEl = {
+//   //   ...element,
+//   //   position.generaPosizione(),
+//   // }
+//   //
+//   // return copyEl
+//
+//   return {
+//     ...element,
+//     position: generaPosizione(),
+//   }
+// }));
+//
+// console.log(copy);
+//
+//
+// function generaPosizione() {
+//   var letters = 'ABCDEFGHIJKLMNOPQRSTUWXYZ';
+//
+//   var letter = letters[randomNumber(0, letters.length - 1)];
+//
+//   return letter;
+// }
+//
+// function randomNumber(min, max) {
+//   return Math.floor( Math.random() * (max - min + 1)) + min;
+// }
